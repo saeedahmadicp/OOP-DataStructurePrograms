@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="ONLINE TESTING SERVICE;" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/ONLINE TESTING SERVICE;" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/ONLINE TESTING SERVICE;" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Unit filename="MAIN.h" />
+		<Unit filename="admin_account.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="admin_login.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="admin_open_account.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="create_account.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="create_account_teacher.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="encryption.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="generate_rollno.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="getpassword.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="math_games.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="mcqs_writing.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="online_test.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="quick_brain_game.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="review_the_test.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="show_record.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="store_record.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="student_login.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="student_record.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="teacher_login.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="teacher_open_account.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="test_result.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="true_false_game.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

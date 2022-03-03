@@ -1,0 +1,84 @@
+# depslib dependency file v1.0
+1547302982 source:c:\users\ahmad\desktop\online_banking\create_account.c
+	<stdio.h>
+
+1547303208 source:c:\users\ahmad\desktop\online_banking\main.c
+	<stdio.h>
+	"main.h"
+
+1547301983 c:\users\ahmad\desktop\online_banking\main.h
+
+1547302729 source:c:\users\ahmad\desktop\online_banking\open_account.c
+	<stdio.h>
+
+1547303638 source:c:\users\ahmad\desktop\online_banking\general_data_acces.c
+	<stdio.h>
+
+1547997552 source:c:\users\hp\desktop\projects\online_banking\create_account.c
+	<stdio.h>
+
+1547303640 source:c:\users\hp\desktop\projects\online_banking\general_data_acces.c
+	<stdio.h>
+
+1548052947 source:c:\users\hp\desktop\projects\online_banking\main.c
+	<stdio.h>
+	<stdlib.h>
+	"main.h"
+
+1547995377 c:\users\hp\desktop\projects\online_banking\main.h
+
+1548007443 source:c:\users\hp\desktop\projects\online_banking\open_account.c
+	<stdio.h>
+
+1547991224 source:c:\users\hp\desktop\projects\online_banking\bank_domain.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1547997929 source:c:\users\hp\desktop\projects\online_banking\bank_data_change.c
+	<stdio.h>
+	<stdlib.h>
+
+1547996531 source:c:\users\hp\desktop\projects\online_banking\bank_personal.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1547996395 source:c:\users\hp\desktop\projects\online_banking\bank_data_read.c
+	<stdio.h>
+	<stdlib.h>
+
+1547997929 source:c:\users\hp\desktop\master folder\projects\online_banking\bank_data_change.c
+	<stdio.h>
+	<stdlib.h>
+
+1547996395 source:c:\users\hp\desktop\master folder\projects\online_banking\bank_data_read.c
+	<stdio.h>
+	<stdlib.h>
+
+1547991224 source:c:\users\hp\desktop\master folder\projects\online_banking\bank_domain.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1547996531 source:c:\users\hp\desktop\master folder\projects\online_banking\bank_personal.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1547997552 source:c:\users\hp\desktop\master folder\projects\online_banking\create_account.c
+	<stdio.h>
+
+1547303640 source:c:\users\hp\desktop\master folder\projects\online_banking\general_data_acces.c
+	<stdio.h>
+
+1548052947 source:c:\users\hp\desktop\master folder\projects\online_banking\main.c
+	<stdio.h>
+	<stdlib.h>
+	"main.h"
+
+1547995377 c:\users\hp\desktop\master folder\projects\online_banking\main.h
+
+1548007443 source:c:\users\hp\desktop\master folder\projects\online_banking\open_account.c
+	<stdio.h>
+

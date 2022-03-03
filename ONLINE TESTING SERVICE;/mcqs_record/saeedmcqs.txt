@@ -1,0 +1,354 @@
+ What is C Tokens?
+A.The smallest individual units of c program
+B.The basic element recognized by the compiler
+C.The largest individual units of program
+D.A & B Both
+D
+
+ Bitwise operators can operate upon?
+A.double and chars
+B.floats and doubles
+C.ints and floats
+D.ints and chars
+D
+
+ Recursive functions are executed in a?
+A.First In First Out Order
+B.Load Balancing
+C.Parallel Fashion
+D.Last In First Out Order
+D
+
+ What will be the output of the following statement?  int a=10; printf("%d &i",a,10);
+A.error
+B.10
+C.10 10
+D.none of these
+D
+
+ Who is father of C language?
+A.James A.Gosling
+B.Dinnis Ritchie
+C.Bjarne Stroustrup
+D.E.f. Codd
+B
+
+ C Language developed at_____?
+A.1970
+B.1971
+C.1972
+D.1973
+C
+
+ C programs are converted into machine language with the help of____
+A.An Editor
+B.A compiler
+C.An operating System
+D.None of these
+B
+
+ Standard ANSI C recognize ____ number of keywords?
+A.30
+B.32
+C.24
+D.36
+B
+
+ Which one of the following is not a reserved keyword for C?
+A.auto
+B.case 
+C.default
+D.main
+D
+
+ In C, if you pass an array as an argument to a function, what actually gets passed?
+A.Value of element in array
+B.first element of array 
+C.base address of array 
+D.None of these
+C
+
+ The term Computer is derived from__________?
+A. Latin
+B. German
+C. French
+D. Arabic
+A
+
+ Who is the father of Computer?
+A. Allen Turing
+B. Charles Babbage
+C. Simur Cray 
+D. Augusta Adaming
+A
+
+ Who is the father of Internet ?
+A. Chares Babbage
+B. Vint Cerf
+C. Denis Riche
+D. Martin Cooper
+B
+
+ Which technology is used in compact disks?
+A. Mechanical
+B. Electrical
+C. Electro Magnetic
+D. Laser
+D
+
+ ALU is____________?
+A. Arithmetic Logic Unit
+B. Array Logic Unit
+C. Application Logic Unit
+D. None of above
+A
+
+ MSI stands for___________?
+A. Medium Scale Integrated Circuits
+B. Medium System Integrated Circuits
+C. Medium Scale Intelligent Circuit
+D. Medium System Intelligent Circuit
+A
+
+ The first computers were programmed using___________?
+A. Assembly language
+B. Machine language
+C. Source code
+D. Object code
+B
+
+ What is a light pen?
+A. A Mechanical Input device
+B. Optical input device
+C. Electronic input device
+D. Optical output device
+B
+
+ Which of the following is not anti- viruses software?
+A. Avira
+B. Kaspersky
+C. Oracle
+D. McAfee
+C
+
+ IBM 1401 is_________?
+A. First Generation Computer
+B. Second Generation Computer
+C. Third Generation Computer
+D. Fourth Generation Computer
+B
+
+ Second Generation computers were developed during___________?
+A. 1949 to 1955
+B. 1956 to 1965
+C. 1965 to 1970
+D. 1970 to 1990
+B
+
+ A computer program that translates one program instructions at a time into machine language is called a/an___________?
+A. Interpreter
+B. CPU
+C. Compiler
+D. Simulato
+A
+
+ Which of the following are output devices?
+A. Keyboard
+B. Mouse
+C. Card reader
+D. None of these
+D
+
+ RAM stands for___________?
+A. Random origin money
+B. Random only memory
+C. Read only memory
+D. Random access memory
+D
+
+ ALU and Control Unit jointly known as__________?
+A. RAM
+B. ROM
+C. CPU
+D. PC
+C
+
+ WWW stands for___________?
+A. World Whole Web
+B. Wide World Web
+C. Web World Wide
+D. World Wide Web
+D
+
+ _________ is called the father of modern digital computer?
+A. Leibnitz
+B. Blaise Pascal
+C. Charles Babbage
+D.  J.H  Muller
+D
+
+ Junk e-mail is also called_________?
+A. spam
+B. spoof
+C. sniffer script
+D. spool
+A
+
+ Which of the following is a storage device?
+A. Tape
+B. Hard Disk
+C. Floppy Disk
+D. All of the above
+D
+
+ DOS stands for____________?
+A. Disk Operating System
+B. Disk operating session
+C. Digital Operating System
+D. Digital Open system
+A
+
+___________Store data or information temporarily and pass it on as directed by the control unit?
+A. Address
+B. Register
+C. Number
+D. Memory
+B
+
+Malicious software is known as____________?
+A. Badware.
+B. Malware.
+C. Maliciousware.
+D. Illegalware
+B
+
+In which generation Computers vacuum tube were used?
+A. First generation
+B. Second generation
+C. Third generation
+D. Fourth generation
+A
+
+Windows 10 was launched in which year?
+A. 2010
+B. 2013
+C. 2015
+D. 2017
+C
+
+Android was founded in_________?
+A. 2005
+B. 2003
+C. 2004
+D. 2006
+B
+
+DVD Stands For:__________?
+A. Digital Versatile Disk
+B. Digital Versatile Drive
+C. Digital volume disk
+D. Digital Video drive
+A
+
+ PDF stands for ________?
+A. Printed Document Format
+B. Public Document Format
+C. Portable Document Format
+D. Published Document Format
+C
+
+ MAC stands for ________?
+A. Mass Access Control
+B. Media Access Control
+C. Mass Access Carraige
+D. Media Access Carraige
+B
+
+ NOS stands for ________?
+A. New Operating System
+B. Network Operating Source
+C. Network Operating System
+D. Network Original System
+C
+
+ What do you call a single point on a computer screen?
+A. Cell
+B. Element
+C. Pixel
+D. None Of these
+C
+
+ The Second Generation Computer used ______ for circuitry:
+A. Transistors
+B. Vacuum Tubes
+C. Integrated Circuits
+D. None of these
+A
+
+ Which language was used in Third Generation Computers?
+A. High Level Programming
+B. Low Level Programming
+C. Assembly Language
+D. None of these
+A
+
+ What is URL?
+A. Website Title
+B. Address of web page
+C. Search engine
+D. None of these
+B
+
+ Fastest type of computer memory is: 
+A. Cache
+B. ROM
+C. RAM
+D. none of these
+A
+
+ An error in computer data is called
+A. Virus
+B. Bug
+C. Noro Virus
+D. None of these
+B
+
+ One MB is equal to?
+A. 1024 kb
+B. 1000 kb
+C. 1024 bytes
+D. None of these
+A
+
+ ______ is used to choose between incrementing the PC or performing ALU operations
+A. Conditional codes
+B. Multiplexer
+C. Control unit
+D. None of these
+B
+
+ Unix was developed by:
+A. Robert Noyce
+B. Bell laboratories
+C. John Mauchly
+D. None of these
+B
+
+ Who is the founding father of Google Search Engine?
+A. Larry Page and Sergey Brin
+B. Jerry Yang and David Smith
+C. Steve Jobs and Bill Gates
+D. None of these
+A
+
+ To produce high quality graphics (hardcopy) in color, you would want to use:
+A. Ink jet Printer
+B. Plotter
+C. RGB monitor
+D. None of these
+B
+
+
+
+
+

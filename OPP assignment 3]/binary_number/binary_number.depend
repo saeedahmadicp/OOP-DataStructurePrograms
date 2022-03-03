@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1552415227 source:c:\users\hp\desktop\opp assignment 3]\binary_number\main.cpp
+	<iostream>
+	<stdlib.h>
+	<conio.h>
+

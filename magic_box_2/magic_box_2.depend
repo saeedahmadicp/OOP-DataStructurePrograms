@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1553763906 source:c:\users\hp\desktop\28 class work oop\magic_box_2\main.cpp
+	<iostream>
+	<conio.h>
+	<stdlib.h>
+	<iomanip>
+

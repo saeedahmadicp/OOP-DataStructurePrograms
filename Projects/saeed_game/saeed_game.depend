@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1544721094 source:c:\users\ahmad\desktop\saeed_game\main.c
+	<stdio.h>
+	<stdlib.h>
+	<stdbool.h>
+	<time.h>
+	<ctype.h>
+

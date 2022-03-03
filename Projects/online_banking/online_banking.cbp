@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="online_banking" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/online_banking" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/online_banking" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Unit filename="bank_data_change.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="bank_data_read.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="bank_domain.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="bank_personal.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="create_account.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="general_data.txt" />
+		<Unit filename="general_data_acces.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="main.h" />
+		<Unit filename="online_banking.cbp" />
+		<Unit filename="online_banking.depend" />
+		<Unit filename="online_banking.layout" />
+		<Unit filename="open_account.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

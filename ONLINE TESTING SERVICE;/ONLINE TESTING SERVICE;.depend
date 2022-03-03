@@ -1,0 +1,213 @@
+# depslib dependency file v1.0
+1555734940 source:c:\users\hp\desktop\online testing service;\online_test.c
+	<stdio.h>
+	<stdlib.h>
+	<stdbool.h>
+	<ctype.h>
+	<time.h>
+	<conio.h>
+
+1555397016 source:c:\users\hp\desktop\online testing service;\show_record.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<conio.h>
+
+1555396880 source:c:\users\hp\desktop\online testing service;\store_record.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<conio.h>
+
+1555396841 source:c:\users\hp\desktop\online testing service;\student_record.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+
+1555179086 source:c:\users\hp\desktop\online testing service;\teacher_login.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1555178238 source:c:\users\hp\desktop\online testing service;\main.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	"MAIN.h"
+
+1555178549 source:c:\users\hp\desktop\online testing service;\student_login.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<conio.h>
+
+1555178786 source:c:\users\hp\desktop\online testing service;\math_games.c
+	<stdio.h>
+	<stdlib.h>
+
+1555734620 c:\users\hp\desktop\online testing service;\main.h
+
+1555734746 source:c:\users\hp\desktop\online testing service;\create_account.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<time.h>
+
+1555092355 source:c:\users\hp\desktop\online testing service;\quick_brain_game.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<windows.h>
+	<conio.h>
+
+1554367631 source:c:\users\hp\desktop\online testing service;\true_false_game.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<windows.h>
+	<conio.h>
+
+1555098311 source:c:\users\hp\desktop\online testing service;\mcqs_writing.c
+	<stdio.h>
+	<stdlib.h>
+
+1555734971 source:c:\users\hp\desktop\online testing service;\test_result.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1550733502 source:c:\users\hp\desktop\online testing service;\review_the_test.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+
+1555617704 source:c:\users\hp\desktop\online testing service;\getpassword.c
+	<stdio.h>
+	<conio.h>
+
+1555734600 source:c:\users\hp\desktop\online testing service;\encryption.c
+	<stdio.h>
+	<string.h>
+
+1597404142 source:c:\users\hp\desktop\master folder\online testing service;\create_account.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1555734600 source:c:\users\hp\desktop\master folder\online testing service;\encryption.c
+	<stdio.h>
+	<string.h>
+
+1555617704 source:c:\users\hp\desktop\master folder\online testing service;\getpassword.c
+	<stdio.h>
+	<conio.h>
+
+1557656590 source:c:\users\hp\desktop\master folder\online testing service;\main.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	"MAIN.h"
+
+1557603152 c:\users\hp\desktop\master folder\online testing service;\main.h
+
+1557681262 source:c:\users\hp\desktop\master folder\online testing service;\math_games.c
+	<stdio.h>
+	<stdlib.h>
+
+1597404386 source:c:\users\hp\desktop\master folder\online testing service;\mcqs_writing.c
+	<stdio.h>
+	<stdlib.h>
+
+1597404417 source:c:\users\hp\desktop\master folder\online testing service;\online_test.c
+	<stdio.h>
+	<stdlib.h>
+	<stdbool.h>
+	<ctype.h>
+	<time.h>
+	<conio.h>
+
+1597403914 source:c:\users\hp\desktop\master folder\online testing service;\quick_brain_game.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<windows.h>
+	<conio.h>
+
+1597404482 source:c:\users\hp\desktop\master folder\online testing service;\review_the_test.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+
+1597404487 source:c:\users\hp\desktop\master folder\online testing service;\show_record.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<conio.h>
+
+1597404490 source:c:\users\hp\desktop\master folder\online testing service;\store_record.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<conio.h>
+
+1557681208 source:c:\users\hp\desktop\master folder\online testing service;\student_login.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<conio.h>
+
+1556804717 source:c:\users\hp\desktop\master folder\online testing service;\student_record.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+
+1557601682 source:c:\users\hp\desktop\master folder\online testing service;\teacher_login.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1597404684 source:c:\users\hp\desktop\master folder\online testing service;\test_result.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1597403777 source:c:\users\hp\desktop\master folder\online testing service;\true_false_game.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<windows.h>
+	<conio.h>
+
+1597404359 source:c:\users\hp\desktop\master folder\online testing service;\generate_rollno.c
+	<stdio.h>
+	<stdlib.h>
+
+1597404004 source:c:\users\hp\desktop\master folder\online testing service;\admin_account.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<conio.h>
+
+1557603127 source:c:\users\hp\desktop\master folder\online testing service;\admin_login.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1597404314 source:c:\users\hp\desktop\master folder\online testing service;\admin_open_account.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<conio.h>
+
+1597404334 source:c:\users\hp\desktop\master folder\online testing service;\create_account_teacher.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<conio.h>
+
+1597404493 source:c:\users\hp\desktop\master folder\online testing service;\teacher_open_account.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<conio.h>
+

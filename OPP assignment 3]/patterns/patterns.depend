@@ -1,0 +1,63 @@
+# depslib dependency file v1.0
+1552640203 source:c:\users\hp\desktop\opp assignment 3]\patterns\main.cpp
+	<iostream>
+	"main.h"
+
+1551939524 source:c:\users\hp\desktop\opp assignment 3]\patterns\12a.cpp
+	<iostream>
+	<stdlib.h>
+
+1552247444 c:\users\hp\desktop\opp assignment 3]\patterns\main.h
+
+1551939524 source:c:\users\hp\desktop\opp assignment 3]\patterns\pattern_12b.cpp
+	<iostream>
+	<stdlib.h>
+
+1551939623 source:c:\users\hp\desktop\opp assignment 3]\patterns\pattern_12c.cpp
+	<iostream>
+	<stdlib.h>
+
+1551941561 source:c:\users\hp\desktop\opp assignment 3]\patterns\pattern_12d.cpp
+	<iostream>
+	<stdlib.h>
+
+1551941872 source:c:\users\hp\desktop\opp assignment 3]\patterns\pattern_12e.cpp
+	<iostream>
+	<stdlib.h>
+
+1551942338 source:c:\users\hp\desktop\opp assignment 3]\patterns\pattern_12f.cpp
+	<iostream>
+	<stdlib.h>
+
+1552423183 source:c:\users\hp\desktop\opp assignment 3]\patterns\pattern_12g.cpp
+	<iostream>
+	<stdlib.h>
+
+1552424007 source:c:\users\hp\desktop\opp assignment 3]\patterns\pattern_12h.cpp
+	<iostream>
+	<stdlib.h>
+
+1552423849 source:c:\users\hp\desktop\opp assignment 3]\patterns\pattern_12i.cpp
+	<iostream>
+	<stdlib.h>
+
+1552245938 source:c:\users\hp\desktop\opp assignment 3]\patterns\pattern_12j.cpp
+	<iostream>
+	<stdlib.h>
+	<conio.h>
+
+1552423648 source:c:\users\hp\desktop\opp assignment 3]\patterns\pattern_12k.cpp
+	<iostream>
+	<stdlib.h>
+	<conio.h>
+
+1552247017 source:c:\users\hp\desktop\opp assignment 3]\patterns\pattern_12l.cpp
+	<iostream>
+	<stdlib.h>
+	<conio.h>
+
+1552248593 source:c:\users\hp\desktop\opp assignment 3]\patterns\pattern_12m.cpp
+	<iostream>
+	<stdlib.h>
+	<conio.h>
+

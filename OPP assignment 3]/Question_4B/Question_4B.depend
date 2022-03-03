@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1552070838 source:c:\users\hp\desktop\opp assignment 3]\question_4b\main.cpp
+	<iostream>
+	<stdlib.h>
+	<conio.h>
+	<time.h>
+

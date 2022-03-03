@@ -1,0 +1,182 @@
+ What is C Tokens?
+1.The smallest individual units of c program
+2.The basic element recognized by the compiler
+3.The largest individual units of program
+4.A & B Both
+4
+
+
+ Bitwise operators can operate upon?
+1.double and chars
+2.floats and doubles
+3.ints and floats
+4.ints and chars
+4
+
+ Recursive functions are executed in a?
+1.First In First Out Order
+2.Load Balancing
+3.Parallel Fashion
+4.Last In First Out Order
+4
+
+ What will be the output of the following statement ?
+ int a=10; printf("%d &i",a,10);
+1.error
+2.10
+3.10 10
+4.none of these
+4
+
+ Who is father of C language?
+1.James A.Gosling
+2.Dinnis Ritchie
+3.Bjarne Stroustrup
+4.E.f. Codd
+2
+
+ C Language developed at_____?
+1.1970
+2.1971
+3.1972
+4.1973
+3
+
+ C programs are converted into machine language with the help of____
+1.An Editor
+2.A compiler
+3.An operating System
+4.None of these
+2
+
+ Standard ANSI C recognize ____ number of keywords?
+1.30
+2.32
+3.24
+4.36
+2
+
+ Which one of the following is not a reserved keyword for C?
+1.auto
+2.case 
+3.default
+4.main
+4
+
+In C, if you pass an array as an argument to a function, what actually gets passed?
+1.Value of element in array
+2.first element of array 
+3.base address of array 
+4.None of these
+3
+
+The term Computer is derived from__________?
+1. Latin
+2. German
+3. French
+4. Arabic
+1
+
+ Who is the father of Computer?
+1. Allen Turing
+2. Charles Babbage
+3. Simur Cray 
+4. Augusta Adaming
+1
+
+ Who is the father of Internet ?
+1. Chares Babbage
+2. Vint Cerf
+3. Denis Riche
+4. Martin Cooper
+2
+
+ Which technology is used in compact disks?
+1. Mechanical
+2. Electrical
+3. Electro Magnetic
+4. Laser
+4
+ ALU is____________?
+1. Arithmetic Logic Unit
+2. Array Logic Unit
+3. Application Logic Unit
+4. None of above
+1
+
+ MSI stands for___________?
+1. Medium Scale Integrated Circuits
+2. Medium System Integrated Circuits
+3. Medium Scale Intelligent Circuit
+4. Medium System Intelligent Circuit
+1
+
+ The first computers were programmed using___________?
+1. Assembly language
+2. Machine language
+3. Source code
+4. Object code
+2
+
+ What is a light pen?
+1. A Mechanical Input device
+2. Optical input device
+3. Electronic input device
+4. Optical output device
+2
+
+ Which of the following is not anti- viruses software?
+1. Avira
+2. Kaspersky
+3. Oracle
+4. McAfee
+3
+
+ IBM 1401 is_________?
+1. First Generation Computer
+2. Second Generation Computer
+3. Third Generation Computer
+4. Fourth Generation Computer
+2
+
+Second Generation computers were developed during___________?
+1. 1949 to 1955
+2. 1956 to 1965
+3. 1965 to 1970
+4. 1970 to 1990
+2
+
+ A computer program that translates one program instructions at a time into machine language is called a/an___________?
+1. Interpreter
+2. CPU
+3. Compiler
+4. Simulato
+1
+
+Which of the following are output devices?
+1. Keyboard
+2. Mouse
+3. Card reader
+4. None of these
+4
+
+RAM stands for___________?
+1. Random origin money
+2. Random only memory
+3. Read only memory
+4. Random access memory
+4
+
+ALU and Control Unit jointly known as__________?
+1. RAM
+2. ROM
+3. CPU
+4. PC
+3
+
+
+
+
+
+
+

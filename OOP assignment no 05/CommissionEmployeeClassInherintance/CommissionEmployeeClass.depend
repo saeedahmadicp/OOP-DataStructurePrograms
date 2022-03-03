@@ -1,0 +1,32 @@
+# depslib dependency file v1.0
+1555998789 source:c:\users\hp\desktop\oop assignment no 05\commissionemployeeclass\main.cpp
+	<iostream>
+	<cstdlib>
+	<conio.h>
+	"main.h"
+
+1555998123 source:c:\users\hp\desktop\oop assignment no 05\commissionemployeeclass\definitions.cpp
+	"main.h"
+
+1555957599 c:\users\hp\desktop\oop assignment no 05\commissionemployeeclass\main.h
+	<iostream>
+	<string>
+
+1556168386 source:c:\users\hp\desktop\oop assignment no 05\commissionemployeeclassinherintance\definitions.cpp
+	"main.h"
+	"base.h"
+
+1556089219 c:\users\hp\desktop\oop assignment no 05\commissionemployeeclassinherintance\main.h
+	<iostream>
+	<string>
+
+1556089938 source:c:\users\hp\desktop\oop assignment no 05\commissionemployeeclassinherintance\main.cpp
+	<iostream>
+	<cstdlib>
+	<conio.h>
+	"main.h"
+	"base.h"
+
+1556089383 c:\users\hp\desktop\oop assignment no 05\commissionemployeeclassinherintance\base.h
+	"main.h"
+

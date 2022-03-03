@@ -1,0 +1,20 @@
+# depslib dependency file v1.0
+1549109423 source:c:\users\hp\desktop\counter\main.cpp
+	<iostream>
+	"main.h"
+
+1549107539 source:c:\users\hp\desktop\counter\counter.cpp
+	<iostream>
+
+1549111933 source:c:\users\hp\desktop\counter\bank.cpp
+	<iostream>
+	<stdlib.h>
+	"main.h"
+
+1549109181 c:\users\hp\desktop\counter\main.h
+
+1549111933 source:c:\users\hp\desktop\counter\abc.cpp
+	<iostream>
+	<stdlib.h>
+	"main.h"
+

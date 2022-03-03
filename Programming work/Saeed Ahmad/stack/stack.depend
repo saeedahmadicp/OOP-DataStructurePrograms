@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1549106929 source:c:\users\hp\desktop\stack\main.cpp
+	<iostream>
+	<stdlib.h>
+	<conio.h>
+	"main.h"
+
+1549086063 c:\users\hp\desktop\stack\main.h
+
+1549086073 source:c:\users\hp\desktop\stack\stack.cpp
+	<iostream>
+
