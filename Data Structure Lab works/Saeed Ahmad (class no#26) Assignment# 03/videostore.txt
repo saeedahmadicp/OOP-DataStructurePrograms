@@ -1,0 +1,1010 @@
+////////////////////////////////////////linkedListIterator.h
+#ifndef LINKEDLISTITERATOR_H_INCLUDED
+#define LINKEDLISTITERATOR_H_INCLUDED
+
+#include<iostream>
+#include"node.h"
+template <class Type>
+class linkedListIterator
+{
+public:
+    linkedListIterator();
+    //Default constructor
+    //Postcondition: current = NULL;
+    linkedListIterator(nodeType<Type> *ptr);
+    //Constructor with a parameter.
+    //Postcondition: current = ptr;
+    Type operator*();
+    //Function to overload the dereferencing operator *.
+    //Postcondition: Returns the info contained in the node.
+    linkedListIterator<Type> operator++();
+    //Overload the preincrement operator.
+    //Postcondition: The iterator is advanced to the next node
+    bool operator==(const linkedListIterator<Type>& right) const;
+    //Overload the equality operator.
+    //Postcondition: Returns true if this iterator is equal to
+    // the iterator specified by right, otherwise it returns
+    // false.
+    bool operator!=(const linkedListIterator<Type>& right) const;
+    //Overload the not equal to operator.
+    //Postcondition: Returns true if this iterator is not equal to
+    // the iterator specified by right, otherwise it returns
+    // false.
+private:
+    nodeType<Type> *current; //pointer to point to the current
+    //node in the linked list
+};
+
+
+#endif // LINKEDLISTITERATOR_H_INCLUDED
+
+//////////////////////////////////////////////////linkedListType.h
+#ifndef LINKEDLISTTYPE_H_INCLUDED
+#define LINKEDLISTTYPE_H_INCLUDED
+
+#include"linkedListIterator.h"
+//#include"unorderedLinkedList.h"
+#include"node.h"
+
+template <class Type>
+class linkedListType
+{
+public:
+    const linkedListType<Type>& operator= (const linkedListType<Type>&);
+    //Overload the assignment operator.
+    void initializeList();
+    //Initialize the list to an empty state.
+    //Postcondition: first = NULL, last = NULL, count = 0;
+    bool isEmptyList() const;
+    //Function to determine whether the list is empty.
+    //Postcondition: Returns true if the list is empty, otherwise
+    // it returns false.
+    void print() const;
+    //Function to output the data contained in each node.
+    //Postcondition: none
+    int length() const;
+    //Function to return the number of nodes in the list.
+    //Postcondition: The value of count is returned.
+    void destroyList();
+    //Function to delete all the nodes from the list.
+    //Postcondition: first = NULL, last = NULL, count = 0;
+    Type front() const;
+    //Function to return the first element of the list.
+    //Precondition: The list must exist and must not be empty.
+    //Postcondition: If the list is empty, the program terminates;
+    // otherwise, the first element of the list is returned.
+    Type back() const;
+    //Function to return the last element of the list.
+    //Precondition: The list must exist and must not be empty.
+    //Postcondition: If the list is empty, the program
+    // terminates; otherwise, the last
+    // element of the list is returned.
+    virtual bool search(const Type& searchItem) const = 0;
+    //Function to determine whether searchItem is in the list.
+    //Postcondition: Returns true if searchItem is in the list,
+    // otherwise the value false is returned.
+    virtual void insertFirst(const Type& newItem) = 0;
+    //Function to insert newItem at the beginning of the list.
+    //Postcondition: first points to the new list, newItem is
+    // inserted at the beginning of the list, last points to
+    // the last node in the list, and count is incremented by
+    // 1.
+    virtual void insertLast(const Type& newItem) = 0;
+    //Function to insert newItem at the end of the list.
+    //Postcondition: first points to the new list, newItem is
+    // inserted at the end of the list, last points to the
+    // last node in the list, and count is incremented by 1.
+    virtual void deleteNode(const Type& deleteItem) = 0;
+    //Function to delete deleteItem from the list.
+    //Postcondition: If found, the node containing deleteItem is
+    // deleted from the list. first points to the first node,
+    // last points to the last node of the updated list, and
+    // count is decremented by 1.
+    linkedListIterator<Type> begin();
+    //Function to return an iterator at the beginning of the
+    //linked list.
+    //Postcondition: Returns an iterator such that current is set
+    // to first.
+    linkedListIterator<Type> end();
+    //Function to return an iterator one element past the
+    //last element of the linked list.
+    //Postcondition: Returns an iterator such that current is set
+    // to NULL.
+    linkedListType();
+    //default constructor
+    //Initializes the list to an empty state.
+    //Postcondition: first = NULL, last = NULL, count = 0;
+    linkedListType(const linkedListType<Type>& otherList);
+    //copy constructor
+    virtual ~linkedListType();
+    //destructor
+    //Deletes all the nodes from the list.
+    //Postcondition: The list object is destroyed.
+
+protected:
+    int count; //variable to store the number of list elements
+    //
+    nodeType<Type> *first; //pointer to the first node of the list
+    nodeType<Type> *last; //pointer to the last node of the list
+
+private:
+    void copyList(const linkedListType<Type>& otherList);
+    //Function to make a copy of otherList.
+    //Postcondition: A copy of otherList is created and assigned
+    // to this list.
+};
+
+#endif // LINKEDLISTTYPE_H_INCLUDED
+
+////////////////////////////////////////////////node.h
+#ifndef NODE_H_INCLUDED
+#define NODE_H_INCLUDED
+
+#include"videoType.h"
+
+//Definition of the node
+template <typename Type>
+struct nodeType
+{
+    Type info;
+    nodeType<Type> *link;
+};
+
+#endif // NODE_H_INCLUDED
+
+///////////////////////////////////////////////unorderedLinkedList.h
+#ifndef UNORDEREDLINKEDLIST_H_INCLUDED
+#define UNORDEREDLINKEDLIST_H_INCLUDED
+
+#include"linkedListType.h"
+
+template <class Type>
+class unorderedLinkedList: public linkedListType<Type>
+{
+public:
+    bool search(const Type& searchItem) const;
+    //Function to determine whether searchItem is in the list.
+    //Postcondition: Returns true if searchItem is in the list,
+    // otherwise the value false is returned.
+    void insertFirst(const Type& newItem);
+    //Function to insert newItem at the beginning of the list.
+    //Postcondition: first points to the new list, newItem is
+    // inserted at the beginning of the list, last points to
+    // the last node, and count is incremented by 1.
+    //
+    void insertLast(const Type& newItem);
+    //Function to insert newItem at the end of the list.
+    //Postcondition: first points to the new list, newItem is
+    // inserted at the end of the list, last points to the
+    // last node, and count is incremented by 1.
+    void deleteNode(const Type& deleteItem);
+    //Function to delete deleteItem from the list.
+    //Postcondition: If found, the node containing deleteItem
+    // is deleted from the list. first points to the first
+    // node, last points to the last node of the updated
+    // list, and count is decremented by 1.
+};
+
+#endif // UNORDEREDLINKEDLIST_H_INCLUDED
+
+///////////////////////////////////////////////////videoListType.h
+#ifndef VIDEOLISTTYPE_H_INCLUDED
+#define VIDEOLISTTYPE_H_INCLUDED
+
+#include <string>
+#include "unorderedLinkedList.h"
+#include "videoType.h"
+
+using namespace std;
+
+class videoListType:public unorderedLinkedList<videoType>
+{
+public:
+    bool videoSearch(string title) const;
+    //Function to search the list to see whether a
+    //particular title, specified by the parameter title,
+    //is in the store.
+    //Postcondition: Returns true if the title is found, and
+    // false otherwise.
+    bool isVideoAvailable(string title) const;
+    //Function to determine whether a copy of a particular
+    //video is in the store.
+    //Postcondition: Returns true if at least one copy of the
+    // video specified by title is in the store, and false
+    // otherwise.
+    void videoCheckOut(string title);
+    //Function to check out a video, that is, rent a video.
+    //Postcondition: copiesInStock is decremented by one.
+    void videoCheckIn(string title);
+    //Function to check in a video returned by a customer.
+    //Postcondition: copiesInStock is incremented by one.
+    bool videoCheckTitle(string title) const;
+    //Function to determine whether a particular video is in
+    //the store.
+    //Postcondition: Returns true if the video’s title is the
+    // same as title, and false otherwise.
+    void videoUpdateInStock(string title, int num);
+    //Function to update the number of copies of a video
+    //by adding the value of the parameter num. The
+    //parameter title specifies the name of the video for
+    //which the number of copies is to be updated.
+    //Postcondition: copiesInStock = copiesInStock + num;
+    void videoSetCopiesInStock(string title, int num);
+    //Function to reset the number of copies of a video.
+    //The parameter title specifies the name of the video
+    //for which the number of copies is to be reset, and the
+    //parameter num specifies the number of copies.
+    //Postcondition: copiesInStock = num;
+    void videoPrintTitle() const;
+    //Function to print the titles of all the videos in the store.
+private:
+    void searchVideoList(string title, bool& found,
+    nodeType<videoType>* &current) const;
+    //This function searches the video list for a particular
+    //video, specified by the parameter title.
+    //Postcondition: If the video is found, the parameter found is
+    // set to true, otherwise it is set to false. The parameter
+    // current points to the node containing the video.
+};
+
+
+#endif // VIDEOLISTTYPE_H_INCLUDED
+
+////////////////////////////////////////////////////////videoType.h
+#ifndef VIDEOTYPE_H_INCLUDED
+#define VIDEOTYPE_H_INCLUDED
+
+#include <iostream>
+#include <string>
+
+class videoType
+{
+friend std::ostream& operator<< (std::ostream&, const videoType&);
+
+public:
+
+    void setVideoInfo(std::string title, std::string star1, std::string star2, std::string producer,
+                      std::string director, std::string productionCo, int setInStock);
+//Function to set the details of a video.
+//The private member variables are set according to the
+//parameters.
+//Postcondition: videoTitle = title; movieStar1 = star1;
+// movieStar2 = star2; movieProducer = producer;
+// movieDirector = director;
+// movieProductionCo = productionCo;
+// copiesInStock = setInStock;
+    int getNoOfCopiesInStock() const;
+//Function to check the number of copies in stock.
+//Postcondition: The value of copiesInStock is returned.
+    void checkOut();
+//Function to rent a video.
+//Postcondition: The number of copies in stock is
+// decremented by one.
+    void checkIn();
+//Function to check in a video.
+//Postcondition: The number of copies in stock is
+// incremented by one.
+    void printTitle() const;
+//Function to print the title of a movie.
+    void printInfo() const;
+//Function to print the details of a video.
+//Postcondition: The title of the movie, stars, director,
+// and so on are displayed on the screen.
+    bool checkTitle(std::string title);
+//Function to check whether the title is the same as the
+//title of the video.
+//Postcondition: Returns the value true if the title is the
+// same as the title of the video; false otherwise.
+    void updateInStock(int num);
+//Function to increment the number of copies in stock by
+//adding the value of the parameter num.
+//Postcondition: copiesInStock = copiesInStock + num;
+    void setCopiesInStock(int num);
+//Function to set the number of copies in stock.
+//Postcondition: copiesInStock = num;
+    std::string getTitle() const;
+//Function to return the title of the video.
+//Postcondition: The title of the video is returned.
+    videoType(std::string title = "", std::string star1 = "", std::string star2 = "", std::string producer = "",
+              std::string director = "", std::string productionCo = "", int setInStock = 0);
+//constructor
+//The member variables are set according to the
+//incoming parameters. If no values are specified, the
+//default values are assigned.
+//Postcondition: videoTitle = title; movieStar1 = star1;
+// movieStar2 = star2; movieProducer = producer;
+// movieDirector = director;
+// movieProductionCo = productionCo;
+// copiesInStock = setInStock;
+//Overload the relational operators.
+    bool operator==(const videoType&) const;
+    bool operator!=(const videoType&) const;
+private:
+    std::string videoTitle; //variable to store the name of the movie
+    std::string movieStar1; //variable to store the name of the star
+    std::string movieStar2; //variable to store the name of the star
+    std::string movieProducer; //variable to store the name of the
+//producer
+    std::string movieDirector; //variable to store the name of the
+//director
+    std::string movieProductionCo; //variable to store the name
+//of the production company
+    int copiesInStock; //variable to store the number of
+//copies in stock
+};
+
+
+#endif // VIDEOTYPE_H_INCLUDED
+
+///////////////////////////////////////////linkedListIterator.cpp
+#include"linkedListIterator.h"
+
+using namespace std;
+
+template class linkedListIterator<videoType>;
+
+template <class Type>
+linkedListIterator<Type>::linkedListIterator()
+{
+    current = NULL;
+}
+
+template <class Type>
+linkedListIterator<Type>::linkedListIterator(nodeType<Type> *ptr)
+{
+    current = ptr;
+}
+
+template <class Type>
+Type linkedListIterator<Type>::operator*()
+{
+    return current->info;
+}
+
+template <class Type>
+linkedListIterator<Type> linkedListIterator<Type>::operator++()
+{
+    current = current->link;
+    return *this;
+}
+
+template <class Type>
+bool linkedListIterator<Type>::operator==(const linkedListIterator<Type>& right) const
+{
+    return (current == right.current);
+}
+
+template <class Type>
+bool linkedListIterator<Type>::operator!=(const linkedListIterator<Type>& right) const
+{
+    return (current != right.current);
+}
+
+///////////////////////////////////////////////////linkedListType.cpp
+#include"linkedListType.h"
+#include<cassert>
+
+using namespace std;
+
+template class linkedListType<videoType>;
+
+template <class Type>
+bool linkedListType<Type>::isEmptyList() const
+{
+    return (first == NULL);
+}
+
+template <class Type>
+linkedListType<Type>::linkedListType() //default constructor
+{
+    first = NULL;
+    last = NULL;
+    count = 0;
+}
+
+template <class Type>
+void linkedListType<Type>::destroyList()
+{
+    nodeType<Type> *temp; //pointer to deallocate the memory
+    //occupied by the node
+    while (first != NULL) //while there are nodes in the list
+    {
+        temp = first; //set temp to the current node
+        first = first->link; //advance first to the next node
+        delete temp; //deallocate the memory occupied by temp
+    }
+    last = NULL; //initialize last to NULL; first has already
+    //been set to NULL by the while loop
+    count = 0;
+}
+
+template <class Type>
+void linkedListType<Type>::initializeList()
+{
+    destroyList(); //if the list has any nodes, delete them
+}
+
+template <class Type>
+void linkedListType<Type>::print() const
+{
+    nodeType<Type> *current; //pointer to traverse the list
+    current = first; //set current point to the first node
+    while (current != NULL) //while more data to print
+    {
+        cout << current->info << " ";
+        current = current->link;
+    }
+}//end print
+
+template <class Type>
+int linkedListType<Type>::length() const
+{
+    return count;
+}
+
+template <class Type>
+Type linkedListType<Type>::front() const
+{
+    assert(first != NULL);
+    return first->info; //return the info of the first node
+}//end front
+
+template <class Type>
+Type linkedListType<Type>::back() const
+{
+    assert(last != NULL);
+    return last->info; //return the info of the last node
+}//end back
+
+template <class Type>
+linkedListIterator<Type> linkedListType<Type>::begin()
+{
+    linkedListIterator<Type> temp(first);
+    return temp;
+}
+
+template <class Type>
+linkedListIterator<Type> linkedListType<Type>::end()
+{
+    linkedListIterator<Type> temp(NULL);
+    return temp;
+}
+
+template <class Type>
+void linkedListType<Type>::copyList(const linkedListType<Type>& otherList)
+{
+    nodeType<Type> *newNode; //pointer to create a node
+    nodeType<Type> *current; //pointer to traverse the list
+    if (first != NULL) //if the list is nonempty, make it empty
+        destroyList();
+    if (otherList.first == NULL) //otherList is empty
+    {
+        first = NULL;
+        last = NULL;
+        count = 0;
+    }
+    else
+    {
+        current = otherList.first; //current points to the
+        //list to be copied
+        count = otherList.count;
+        //copy the first node
+        first = new nodeType<Type>; //create the node
+        first->info = current->info; //copy the info
+        first->link = NULL; //set the link field of the node to NULL
+        last = first; //make last point to the first node
+        current = current->link; //make current point to the next
+        // node
+        //copy the remaining list
+        while (current != NULL)
+        {
+            newNode = new nodeType<Type>; //create a node
+            newNode->info = current->info; //copy the info
+            newNode->link = NULL; //set the link of newNode to NULL
+            last->link = newNode; //attach newNode after last
+            last = newNode; //make last point to the actual last
+            //node
+            current = current->link; //make current point to the
+            //next node
+        }//end while
+    }//end else
+}//end copyList
+
+template <class Type>
+linkedListType<Type>::~linkedListType() //destructor
+{
+    destroyList();
+}
+
+template <class Type>
+linkedListType<Type>::linkedListType(const linkedListType<Type>& otherList)
+{
+    first = NULL;
+    copyList(otherList);
+}//end copy constructor
+
+template <class Type>
+const linkedListType<Type>& linkedListType<Type>::operator=(const linkedListType<Type>& otherList)
+{
+    if (this != &otherList) //avoid self-copy
+    {
+        copyList(otherList);
+    }//end else
+    return *this;
+}
+
+/////////////////////////////////////////////////////////unorderedLinkedList.cpp
+#include"unorderedLinkedList.h"
+#include<iostream>
+
+using namespace std;
+
+class videoType;
+
+template class unorderedLinkedList<videoType>;
+
+template <class Type>
+bool unorderedLinkedList<Type>::search(const Type& searchItem) const
+{
+    nodeType<Type> *current; //pointer to traverse the list
+    bool found = false;
+    current = this->first; //set current to point to the first
+    //node in the list
+    while (current != NULL && !found) //search the list
+        if (current->info == searchItem) //searchItem is found
+            found = true;
+        else
+            current = current->link; //make current point to
+    //the next node
+    return found;
+}//end search
+
+template <class Type>
+void unorderedLinkedList<Type>::insertFirst(const Type& newItem)
+{
+    nodeType<Type> *newNode; //pointer to create the new node
+    newNode = new nodeType<Type>; //create the new node
+    newNode->info = newItem; //store the new item in the node
+    newNode->link = this->first; //insert newNode before first
+    this->first = newNode; //make first point to the actual first node
+    this->count++; //increment count
+    if (this->last == NULL) //if the list was empty, newNode is also
+    //the last node in the list
+        this->last = newNode;
+}//end insertFirst
+
+template <class Type>
+void unorderedLinkedList<Type>::insertLast(const Type& newItem)
+{
+    nodeType<Type> *newNode; //pointer to create the new node
+    newNode = new nodeType<Type>; //create the new node
+    newNode->info = newItem; //store the new item in the node
+    newNode->link = NULL; //set the link field of newNode to NULL
+        if (this->first == NULL) //if the list is empty, newNode is
+    //both the first and last node
+        {
+            this->first = newNode;
+            this->last = newNode;
+            this->count++; //increment count
+        }
+        else //the list is not empty, insert newNode after last
+        {
+            this->last->link = newNode; //insert newNode after last
+            this->last = newNode; //make last point to the actual
+            //last node in the list
+            this->count++; //increment count
+        }
+}//end insertLast
+
+template <class Type>
+void unorderedLinkedList<Type>::deleteNode(const Type& deleteItem)
+{
+    nodeType<Type> *current; //pointer to traverse the list
+    nodeType<Type> *trailCurrent; //pointer just before current
+    bool found;
+    if (this->first == NULL) //Case 1; the list is empty.
+        std::cout << "Cannot delete from an empty list." << std::endl;
+    else
+    {
+        if (this->first->info == deleteItem) //Case 2
+        {
+            current = this->first;
+            this->first = this->first->link;
+            this->count--;
+            if (this->first == NULL) //the list has only one node
+            this->last = NULL;
+            delete current;
+        }
+        else //search the list for the node with the given info
+        {
+            found = false;
+            trailCurrent = this->first; //set trailCurrent to point
+            //to the first node
+            current = this->first->link; //set current to point to
+            //the second node
+            while (current != NULL && !found)
+            {
+                if (current->info != deleteItem)
+                {
+                    trailCurrent = current;
+                    current = current-> link;
+                }
+                else
+                    found = true;
+            }//end while
+            if (found) //Case 3; if found, delete the node
+            {
+                trailCurrent->link = current->link;
+                this->count--;
+                if (this->last == current) //node to be deleted was the
+                //last node
+                    this->last = trailCurrent; //update the value of last
+                delete current; //delete the node from the list
+            }
+            else
+                std::cout << "The item to be deleted is not in " << "the list." << std::endl;
+        }//end else
+    }//end else
+}//end deleteNode
+
+////////////////////////////////////////////////////videoListType.cpp
+#include"videoListType.h"
+
+using namespace std;
+
+void videoListType::searchVideoList(string title, bool& found, nodeType<videoType>* &current) const
+{
+    found = false; //set found to false
+    current = first; //set current to point to the first node
+    while (current != NULL && !found) //search the list
+        if (current->info.checkTitle(title)) //the item is found
+            found = true;
+        else
+            current = current->link; //advance current to
+    //the next node
+}//end searchVideoList
+
+bool videoListType::isVideoAvailable(string title) const
+{
+    bool found;
+    nodeType<videoType> *location;
+    searchVideoList(title, found, location);
+    if (found)
+        found = (location->info.getNoOfCopiesInStock() > 0);
+    else
+        found = false;
+    return found;
+}
+
+void videoListType::videoCheckIn(string title)
+{
+    bool found = false;
+    nodeType<videoType> *location;
+    searchVideoList(title, found, location); //search the list
+    if (found)
+        location->info.checkIn();
+    else
+        cout << "The store does not carry " << title << endl;
+}
+
+void videoListType::videoCheckOut(string title)
+{
+    bool found = false;
+    nodeType<videoType> *location;
+    searchVideoList(title, found, location); //search the list
+    if (found)
+        location->info.checkOut();
+    else
+        cout << "The store does not carry " << title << endl;
+}
+
+bool videoListType::videoCheckTitle(string title) const
+{
+    bool found = false;
+    nodeType<videoType> *location;
+    searchVideoList(title, found, location); //search the list
+    return found;
+}
+
+void videoListType::videoUpdateInStock(string title, int num)
+{
+    bool found = false;
+    nodeType<videoType> *location;
+    searchVideoList(title, found, location); //search the list
+    if (found)
+        location->info.updateInStock(num);
+    else
+        cout << "The store does not carry " << title << endl;
+}
+
+void videoListType::videoSetCopiesInStock(string title, int num)
+{
+    bool found = false;
+    nodeType<videoType> *location;
+    searchVideoList(title, found, location);
+    if (found)
+        location->info.setCopiesInStock(num);
+    else
+        cout << "The store does not carry " << title << endl;
+}
+
+bool videoListType::videoSearch(string title) const
+{
+    bool found = false;
+    nodeType<videoType> *location;
+    searchVideoList(title, found, location);
+    return found;
+}
+
+void videoListType::videoPrintTitle() const
+{
+    nodeType<videoType>* current;
+    current = first;
+    while (current != NULL)
+    {
+        current->info.printTitle();
+        current = current->link;
+    }
+}
+
+/////////////////////////////////////////////////////videoType.cpp
+#include"videoType.h"
+
+using namespace std;
+
+void videoType::setVideoInfo(string title, string star1, string star2, string producer, string director, string productionCo, int setInStock)
+{
+    videoTitle = title;
+    movieStar1 = star1;
+    movieStar2 = star2;
+    movieProducer = producer;
+    movieDirector = director;
+    movieProductionCo = productionCo;
+    copiesInStock = setInStock;
+}
+
+void videoType::checkOut()
+{
+    if (getNoOfCopiesInStock() > 0)
+        copiesInStock--;
+    else
+        cout << "Currently out of stock" << endl;
+}
+
+void videoType::checkIn()
+{
+    copiesInStock++;
+}
+
+int videoType::getNoOfCopiesInStock() const
+{
+    return copiesInStock;
+}
+
+void videoType::printTitle() const
+{
+    cout << "Video Title: " << videoTitle << endl;
+}
+
+void videoType::printInfo() const
+{
+    cout << "Video Title: " << videoTitle << endl;
+    cout << "Stars: " << movieStar1 << " and "
+    << movieStar2 << endl;
+    cout << "Producer: " << movieProducer << endl;
+    cout << "Director: " << movieDirector << endl;
+    cout << "Production Company: " << movieProductionCo << endl;
+    cout << "Copies in stock: " << copiesInStock << endl;
+}
+
+bool videoType::checkTitle(string title)
+{
+    return (videoTitle == title);
+}
+
+void videoType::updateInStock(int num)
+{
+    copiesInStock += num;
+}
+
+void videoType::setCopiesInStock(int num)
+{
+    copiesInStock = num;
+}
+
+string videoType::getTitle() const
+{
+    return videoTitle;
+}
+
+videoType::videoType(string title, string star1, string star2, string producer,
+                     string director, string productionCo, int setInStock)
+{
+    setVideoInfo(title, star1, star2, producer, director, productionCo, setInStock);
+}
+
+bool videoType::operator==(const videoType& other) const
+{
+    return (videoTitle == other.videoTitle);
+}
+
+bool videoType::operator!=(const videoType& other) const
+{
+    return (videoTitle != other.videoTitle);
+}
+
+ostream& operator<< (ostream& osObject, const videoType& video)
+{
+    osObject << endl;
+    osObject << "Video Title: " << video.videoTitle << endl;
+    osObject << "Stars: " << video.movieStar1 << " and "
+    << video.movieStar2 << endl;
+    osObject << "Producer: " << video.movieProducer << endl;
+    osObject << "Director: " << video.movieDirector << endl;
+    osObject << "Production Company: "
+    << video.movieProductionCo << endl;
+    osObject << "Copies in stock: " << video.copiesInStock
+    << endl;
+    osObject << "_____________________________________" << endl;
+    return osObject;
+}
+
+/////////////////////////////////////////////////videostore.cpp
+#include <iostream>
+#include <fstream>
+#include <string>
+//#include"unorderedLinkedList.h"
+#include "videoType.h"
+#include "videoListType.h"
+
+using namespace std;
+
+void createVideoList(ifstream& infile,videoListType& videoList);
+void displayMenu();
+
+int main()
+{
+    videoListType videoList;
+    int choice;
+    char ch;
+    string title;
+    ifstream infile;
+    //open the input file
+    infile.open("videoDat.txt");
+    if (!infile)
+    {
+        cout << "The input file does not exist. " << "The program terminates!!!" << endl;
+        return 1;
+    }
+    //create the video list
+    createVideoList(infile, videoList);
+    infile.close();
+    //show the menu
+    displayMenu();
+    cout << "Enter your choice: ";
+    cin >> choice; //get the request
+    cin.get(ch);
+    cout << endl;
+    //process the requests
+    while (choice != 9)
+    {
+        switch (choice)
+        {
+            case 1:
+                cout << "Enter the title: ";
+                getline(cin, title);
+                cout << endl;
+                if (videoList.videoSearch(title))
+                    cout << "The store carries " << title << endl;
+                else
+                    cout << "The store does not carry " << title << endl;
+                break;
+
+            case 2:
+                cout << "Enter the title: ";
+                getline(cin, title);
+                cout << endl;
+                if (videoList.videoSearch(title))
+                {
+                    if (videoList.isVideoAvailable(title))
+                    {
+                        videoList.videoCheckOut(title);
+                        cout << "Enjoy your movie: " << title << endl;
+                    }
+                    else
+                        cout << "Currently " << title << " is out of stock." << endl;
+                }
+                else
+                    cout << "The store does not carry " << title << endl;
+                break;
+
+            case 3:
+                cout << "Enter the title: ";
+                getline(cin, title);
+                cout << endl;
+                if (videoList.videoSearch(title))
+                {
+                    videoList.videoCheckIn(title);
+                    cout << "Thanks for returning " << title << endl;
+                }
+                else
+                    cout << "The store does not carry " << title << endl;
+                break;
+
+            case 4:
+                cout << "Enter the title: ";
+                getline(cin, title);
+                cout << endl;
+                if (videoList.videoSearch(title))
+                {
+                    if (videoList.isVideoAvailable(title))
+                        cout << title << " is currently in " << "stock." << endl;
+                    else
+                        cout << title << " is currently out " << "of stock." << endl;
+                }
+                else
+                    cout << "The store does not carry " << title << endl;
+                break;
+
+            case 5:
+                videoList.videoPrintTitle();
+                break;
+
+            case 6:
+                videoList.print();
+                break;
+
+            default:
+                cout << "Invalid selection." << endl;
+        }//end switch
+    displayMenu(); //display menu
+    cout << "Enter your choice: ";
+    cin >> choice; //get the next request
+    cin.get(ch);
+    cout << endl;
+    }//end while
+    return 0;
+}
+
+void createVideoList(ifstream& infile, videoListType& videoList)
+{
+    string title;
+    string star1;
+    string star2;
+    string producer;
+    string director;
+    string productionCo;
+    char ch;
+    int inStock;
+    videoType newVideo;
+    getline(infile, title);
+    while (infile)
+    {
+        getline(infile, star1);
+        getline(infile, star2);
+        getline(infile, producer);
+        getline(infile, director);
+        getline(infile, productionCo);
+        infile >> inStock;
+        infile.get(ch);
+        newVideo.setVideoInfo(title, star1, star2, producer,
+        director, productionCo, inStock);
+        videoList.insertFirst(newVideo);
+        getline(infile, title);
+    }//end while
+}//end createVideoList
+
+void displayMenu()
+{
+    cout << "Select one of the following:" << endl;
+    cout << "1: To check whether the store carries a "
+    << "particular video." << endl;
+    cout << "2: To check out a video." << endl;
+    cout << "3: To check in a video." << endl;
+    cout << "4: To check whether a particular video is "
+    << "in stock." << endl;
+    cout << "5: To print only the titles of all the videos."
+    << endl;
+    cout << "6: To print a list of all the videos." << endl;
+    cout << "9: To exit" << endl;
+} //end createVideoList

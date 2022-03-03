@@ -1,0 +1,10 @@
+Dear Madam!
+
+   The third question given by the Sir is include the 2nd question,
+i.e. merge_sort.cpp file. I have measured the execution time within this 
+file. When the user enter the number of element to be in the array. The
+program will automatically randomly initialize the array and then the 
+execution time of the merge_sort algorithm will be calculate automatically
+within the program in microseconds.
+
+Thanks
